@@ -6,14 +6,17 @@
 int main() {
     printf("#######################\nJogo de xadres iniciado \n#######################\n");
     printf("\n Movimentacao da Torre \n \n"); 
+
     int casas;
+    
+//MOVIMENTAÇÃO DA TORRE
     printf ("Digite quantas casas a torre vai se mover:");
     scanf("%d", &casas);
         for (int i = 1; i <= casas ; i++)
     {
         printf(" Direita \n");
     };
-
+//MOVIMENTAÇÃO DA RAINHA
     printf ("Digite quantas casas a Rainha vai se mover:");
     scanf("%d", &casas);
 
@@ -23,16 +26,26 @@ int main() {
     {
         printf(" Esquerda \n");
     }
-    printf ("Digite quantas casas o bispo vai se mover:");
+ //MOVIMENTAÇÃO DA BISPO
+    printf ("Digite quantas casas o bispo vai se mover:\n");
     scanf("%d", &casas);
 
     printf("\n Movimentacao do bispo \n \n"); 
 
         for (int i = 1; i <= casas ; i++)
     {
-        printf(" Direita, cima \n");
+        printf(" Direita, cima \n\n");
     }
-
+ //MOVIMENTAÇÃO DO CAVALO
+    printf ("\nMOVIMENTAÇÃO DO CAVALO:\n\n");  
+    int i, j;
+    for(i=1; i<=1; i++){       
+        for(j=1; j<=i ; j++){
+            printf("Baixo \n");        
+        }
+        printf("esquerda\n");
+        printf("esquerda\n\n");
+    }
 
 
 
@@ -62,4 +75,4 @@ int main() {
     // Inclua o uso de continue e break dentro dos loops.
 
     return 0;
-}
+};
