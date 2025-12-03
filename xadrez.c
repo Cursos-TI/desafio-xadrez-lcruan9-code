@@ -27,10 +27,10 @@ int main() {
         printf(" Esquerda \n");
     }
  //MOVIMENTAÇÃO DA BISPO
-    printf ("Digite quantas casas o bispo vai se mover:\n");
+    printf ("Digite quantas casas o bispo vai se mover:");
     scanf("%d", &casas);
 
-    printf("\n Movimentacao do bispo \n \n"); 
+    printf("\n Movimentacao do bispo \n"); 
 
         for (int i = 1; i <= casas ; i++)
     {
@@ -38,14 +38,18 @@ int main() {
     }
  //MOVIMENTAÇÃO DO CAVALO
     printf ("\nMOVIMENTAÇÃO DO CAVALO:\n\n");  
-    int i, j;
-    for(i=1; i<=1; i++){       
-        for(j=1; j<=i ; j++){
-            printf("Baixo \n");        
+    int j = 1;
+        while (j--)
+        {
+          for (int i = 1; i<=2; i++){
+                printf("Baixo \n");
+          }
+          printf("Esquerda \n");
         }
-        printf("esquerda\n");
-        printf("esquerda\n\n");
-    }
+
+        
+// baixo e esquerda
+    
 
 
 
